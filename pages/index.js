@@ -1,9 +1,7 @@
 // pages/index.js
 
-const Index = () => (
-    <div>
-        <p>Passport stamps are not free</p>
-    </div>
-);
+import Layout from "../components/Layout";
+
+const Index = () => <Layout>Stacking Coins and Paper</Layout>;
 
 export default Index;
