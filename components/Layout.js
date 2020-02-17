@@ -40,6 +40,23 @@ const Layout = props => (
             <Footer />
         </div>
         <style jsx>{`
+            * {
+                box-sizing: border-box;
+            }
+
+            html,
+            body,
+            #__next {
+                height: 100%;
+                width: 100%;
+            }
+
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: "Courier"; sans-serif;
+            }
+
             .Layout {
                 display: flex;
                 flex-direction: column;
@@ -50,6 +67,7 @@ const Layout = props => (
                 flex: 1;
                 display: flex;
                 flex-direction: column;
+                font-family: "Courier New"; sans-serif;
             }
         `}</style>
     </div>    
