@@ -1,5 +1,9 @@
 // components/Layout.js
 
+//head tile
+import Head from "next/head";
+
+//components
 import Header from "./Header";
 import NavBar from "./NavBar";
 import Footer from "./Footer";
@@ -19,8 +23,14 @@ const contentStyle = {
 
 const Layout = props => (
     <div className="Layout" style={layoutStyle}>
+        <Head>
+            <title>StackingCoins</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1" />
+            <meta charSet="utf-8" />
+        </Head>
+        
         <Header />
-        <div className="Content" style={contentStyle}>
+        <div className="Content">
             {props.children}
         </div>
         <div>
@@ -29,6 +39,19 @@ const Layout = props => (
         <div>
             <Footer />
         </div>
+        <style jsx>{`
+            .Layout {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                width: 100%;
+            }
+            .Content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+            }
+        `}</style>
     </div>    
 );
 

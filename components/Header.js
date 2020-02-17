@@ -1,16 +1,15 @@
 // components/Header.js
 
-const headerStyle = {
-    backgroundColor: "teal",
-    color: "white",
-    width: "100%",
-    height: "50px"
-};
-
 const Header = () => (
-    <div className="Header" style={headerStyle}>
+    <div className="Header">
         HEADER
+        <style jsx> {`
+            background-color: teal;
+            color: smoke white;
+            width: 100%;
+            height: 50px;
+        `}</style>
     </div>
-);
+)
 
 export default Header;
